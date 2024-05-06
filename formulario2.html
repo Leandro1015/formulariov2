@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form method="POST" action="recoger_v2.php">
+            <fieldset>
+                <legend>Rellena el formulario</legend>
+                <input type="text" placeholder="Nombre Completo" name="texto"/>
+                <div>
+                    <label>¿Eres Estudiante?</label>
+                    <p>si<input type="checkbox" name="estudiante" value="si es estudiante"></p>
+
+                    <label>¿En que actividades quieres participar?</label>
+                    <p>Olimpiadas<input type="checkbox" name="opcion[]" value="Olimpiadas"></p>
+                    <p>Semana Ignaciana<input type="checkbox" name="opcion[]" value="Semana Ignaciana"></p>
+                    <p>Actividad de Navidad<input type="checkbox" name="opcion[]" value="Actividad de Navidad"></p>
+                    
+                    <label>ESO</label>
+                    <input name="radio1" type="radio" value="eso"/>
+                    <label>Ciclo</label>
+                    <input name="radio1" type="radio" value="ciclo"/>
+                </div>	    
+                            
+                <p>Aceptar terminos y condiciones<input name="aceptar" type="checkbox" value="Aceptado"/></p>
+
+                <div>
+                    <label>Motivo de contacto:</label>
+                    <select name="motivo_contacto">
+                        <option value="Consulta">Consulta</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Reclamación">Reclamación</option>
+                        <option value="Soporte Técnico">Soporte Técnico</option>
+                    </select>
+                </div>         
+                <input value="Enviar" type="submit"/>
+            </fieldset>
+        </form> 
+    </body>
+</html>
